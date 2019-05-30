@@ -1,0 +1,110 @@
+/* Global */
+/* importing roboto font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+
+     /* disable highligts in elements*/
+     -webkit-touch-callout: none; /* iOS Safari */
+     -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+     -ms-user-select: none; /* Internet Explorer/Edge */
+     user-select: none;  /* Chrome and Opera */
+}
+
+#parent {
+    margin-top: calc(50vh - 250px);
+    margin-left: calc(50% - 150px);
+}
+
+/* Buttons */
+.btn {
+    background-color: silver; 
+    color: black;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 100;
+    padding-top: 3px;
+}
+
+.btn:hover{
+    background-color: cyan;
+    filter:blur(.7px);
+}
+
+.row {
+    display: table;
+    table-layout: fixed;
+    width: 300px;
+    height: 30px;
+}
+
+.column {
+    display: table-cell;
+}
+
+#calc-zero {
+    width: 52.6px;
+    border-radius: 0 0 0 7px;
+}
+
+#calc-equals {
+    border-radius: 0 0 7px 0;
+}
+
+#calc-clear {
+    width: 52.6px;
+}
+
+.operator {
+    background-color: cyan;
+}  
+
+.operator:hover {
+    background-color: silver;
+    color: black;
+}
+
+/* Display */
+#display {
+    height: 80px;
+    color: white;
+    text-align: right;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    font-size: 54px;
+    background-color: #383838;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px;
+    border-radius: 7px 7px 0 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 333px) {
+    #parent{
+        margin-top: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
